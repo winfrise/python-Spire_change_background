@@ -62,7 +62,8 @@ target_folder = r"/Users/teacher/Desktop/outputs"
 # 3. 指定背景颜色 (Spire.PDF 提供多种预设颜色)
 # 可选颜色示例: Color.get_LightYellow(), Color.get_LightBlue(), Color.get_LightGreen()
 # 也可以尝试 Color.get_Gray() 等
-bg_color = Color.get_LightBlue() 
+# bg_color = Color.get_SkyBlue() 
+bg_color = Color.FromArgb(255, 0, 136, 227)
 
 # ================= 执行任务 =================
 
