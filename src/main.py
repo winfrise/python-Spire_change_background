@@ -41,7 +41,9 @@ def batch_update_pdf_background(input_root_dir, output_root_dir, target_color):
                     for i in range(pdf_doc.Pages.Count):
                         page = pdf_doc.Pages.get_Item(i)
                         page.BackgroundColor = target_color
-                        # page.BackgroudOpacity = 0.3
+                        
+                        # 设置背景谍有透明度
+                        # page.BackgroudOpacity = 0.5
                     
                     # 4. 保存文件
                     pdf_doc.SaveToFile(output_file_path)
@@ -61,11 +63,13 @@ source_folder = r"/Users/teacher/Desktop/inputs"
 target_folder = r"/Users/teacher/Desktop/outputs"
 
 # 3. 指定背景颜色 (Spire.PDF 提供多种预设颜色)
+#【使用内置颜色】
 # 可选颜色示例: Color.get_LightYellow(), Color.get_LightBlue(), Color.get_LightGreen()
-# 也可以尝试 Color.get_Gray() 等
-# bg_color = Color.get_SkyBlue() 
-# 透明度值:  0-250
-bg_color = Color.FromArgb(255, 0, 136, 227)
+bg_color = Color.get_DeepSkyBlue() 
+
+# 【自定义颜色】
+# 透明度值:  0-255
+# bg_color = Color.FromArgb(100, 0, 153, 255)
 
 # ================= 执行任务 =================
 
