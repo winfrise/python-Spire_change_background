@@ -1,12 +1,26 @@
 # 基于python+Spire.PDF实现的批量修改pdf文件代码
-> 设置输入目录
-> 设置输出目录
 
-### 有水印
-- 使用```python_batch_remove_text```项目去批量去掉水印
-- 也可以手动删除
+### 缺点
+- 有水印
+<br>可使用```python_batch_remove_text```项目去批量去掉水印
+<br>也可以手动删除
+- 页数限制
+<br>免费版对页数有限制（只能处理10页）
 
-缺点：免费版对页数有限制（只能处理10页）
+### 使用方法：
+1.  设置输入目录
+2. 设置输出目录
+3. 设置背景颜色
+
+### 工作流程：
+
+1.  **创建虚拟环境**：在项目目录下执行 `python -m venv .venv`。
+2.  **激活虚拟环境**：
+    -   **Linux/macOS**：`source .venv/bin/activate`
+    -   **Windows**：`.venv\Scripts\activate`
+3.  **安装依赖**：激活环境后，使用 `pip install <package_name>` 安装包。
+4.  **导出依赖列表**：使用 `pip freeze > requirements.txt` 将当前环境中所有包及其精确版本导出到 `requirements.txt` 文件。
+
 
 ```
 # 创建虚拟环境
